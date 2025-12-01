@@ -3,6 +3,7 @@
 
 # Excepto el index.html
 !index.html
+!readme.md
 
 # Excepto el archivo .gitignore mismo
 !.gitignore
