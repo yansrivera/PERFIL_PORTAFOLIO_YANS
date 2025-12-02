@@ -29,7 +29,10 @@ El portafolio incluye:
 
 ## 📧 Contacto
 
-Para más información o propuestas, puedes contactar a Yanstrresky Rivera a través de este portafolio o redes profesionales relacionadas.
+Para más información o propuestas, puedes contactar a Yanstrresky Rivera a través de este portafolio o redes profesionales relacionadas:
+- Telefono 3223196963  
+- Email yanstrreskyrivera@gmail.com  
+
 
 
 ## 📜 Licencia
