@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yanstrresky Rivera — Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portafolio de Yanstrresky Rivera — Desarrollador Junior (Python, JS, MySQL, Git)"/>
+  <meta name="theme-color" content="#2b001f">
+</head>
+<body>
+  <a class="skip-link" href="#home">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#home">
+        <img src="./assents/Imagen de WhatsApp 2025-12-01 a las 10.18.30_d417663a.jpg" alt="Foto de Yanstrresky" class="logo">
+        <div>
+          <h1>Yanstrresky Rivera</h1>
+          <p class="subtitle">Desarrollador Junior — Python • JavaScript • MySQL</p>
+        </div>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+      <ul id="navList" class="nav-list">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2 class="hero-title">Hola — soy Yanstrresky</h2>
+          <p class="lead">Construyo soluciones limpias y funcionales con Python, JavaScript y MySQL. Busco prácticas y oportunidades junior.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">Ver proyectos</a>
+            <a class="btn ghost" href="https://wa.me/573223196963?text=Hola%20Yanstrresky%2C%20vi%20tu%20portafolio" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn ghost" href="mailto:yanstrreskyrivera@gmail.com?subject=Contacto%20desde%20el%20portafolio">Correo</a>
+          </div>
+        </div>
+
+        <aside class="profile card hero-right">
+          <img src="./assents/Imagen de WhatsApp 2025-12-01 a las 10.18.30_d417663a.jpg" alt="Foto Yanstrresky" class="avatar">
+          <div class="card-body">
+            <p class="contact-line">
+              <span><strong>Tel:</strong> <a href="tel:+573223196963">+57 3223196963</a></span>
+              <button class="copy-btn" type="button" data-copy="+573223196963">Copiar</button>
+            </p>
+            <p class="contact-line">
+              <span><strong>Email:</strong> <a href="mailto:yanstrreskyrivera@gmail.com">yanstrreskyrivera@gmail.com</a></span>
+              <button class="copy-btn" type="button" data-copy="yanstrreskyrivera@gmail.com">Copiar</button>
+            </p>
+            <p><strong>Ubicación:</strong> Cúcuta, Colombia</p>
+            <p><a class="text-link" href="https://github.com/yansrivera" target="_blank" rel="noopener">github.com/yansrivera</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p class="text-justify">Soy desarrollador junior con formación técnica. Experiencia en proyectos con Python (scripts y pequeños sistemas), creación de páginas interactivas con HTML/CSS/JS y uso básico de MySQL. Trabajo con Git y metodologías ágiles (SCRUM).</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Habilidades técnicas</h2>
+        <p class="section-note">Pulsa una habilidad para ver solo los proyectos que la usan.</p>
+        <div class="skills-grid">
+          <button class="skill" type="button" data-filter="python">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Scripts, lógica, manejo de archivos JSON</p>
+          </button>
+          <button class="skill" type="button" data-filter="html">
+            <div class="skill-icon">💻</div>
+            <h3>HTML / CSS</h3>
+            <p>Maquetación semántica y responsive</p>
+          </button>
+          <button class="skill" type="button" data-filter="javascript">
+            <div class="skill-icon">🟨</div>
+            <h3>JavaScript</h3>
+            <p>DOM, eventos y pequeñas interacciones</p>
+          </button>
+          <button class="skill" type="button" data-filter="mysql">
+            <div class="skill-icon">🗄️</div>
+            <h3>MySQL / JSON</h3>
+            <p>Consultas simples y almacenamiento de datos</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Proyectos destacados</h2>
+        <div class="project-filters" role="group" aria-label="Filtrar proyectos">
+          <button class="filter-btn is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+          <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+          <button class="filter-btn" type="button" data-filter="html" aria-pressed="false">HTML / CSS</button>
+          <button class="filter-btn" type="button" data-filter="mysql" aria-pressed="false">MySQL</button>
+        </div>
+        <p id="projectsEmpty" class="projects-empty" hidden>Todavía no hay un proyecto publicado con ese filtro.</p>
+        <div class="projects">
+          <!-- Chatbot Cúcuta Deportivo -->
+          <article class="project card" data-tags="javascript python html">
+            <img src="./social/cucutachatbot.png" alt="Chatbot Cúcuta Deportivo — screenshot">
+            <div class="project-description">
+              <h3>Chatbot — Cúcuta Deportivo</h3>
+              <p>Chatbot conversacional que responde preguntas sobre plantel, calendario y resultados. Implementado con Node/JS (frontend + lógica en JSON) y deployable como widget.</p>
+              <p class="meta">Tecnologías: JavaScript • html-css • Python</p>
+              <div class="project-links">
+               
+                <a class="btn small ghost" href="https://github.com/yansrivera/Cucuta_chatbot" target="_blank" rel="noopener">Repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Página interactiva — Medical Duarte (niños) -->
+          <article class="project card" data-tags="javascript html">
+            <img src="./social/paginamedical.png" alt="Página interactiva Medical Duarte — screenshot">
+            <div class="project-description">
+              <h3>Página interactiva — Medical Duarte (niños)</h3>
+              <p>Actividad educativa e interactiva para niños: juegos sencillos, animaciones y contenidos de salud adaptados. Accesible y responsive, pensada para escuelas y centros de salud.</p>
+              <p class="meta">Tecnologías: HTML • CSS • JavaScript</p>
+              <div class="project-links">
+                <a class="btn small" href="https://pagina-medical.vercel.app/" target="_blank" rel="noopener">Ver demo</a>
+                <a class="btn small ghost" href="https://github.com/yansrivera/Pagina_Medical" target="_blank" rel="noopener">Repositorio</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experiencia / Educación</h2>
+        <div class="timeline">
+          <div class="exp">
+            <h3>Bachiller Técnico — 2024</h3>
+            <p>I.E.M.D.P.S — Contabilización de operaciones comerciales y financieras</p>
+          </div>
+          <div class="exp">
+            <h3>Campuslands — 2025</h3>
+            <p>Cursos: Python, Git, HTML/CSS/JS, MySQL, SCRUM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="contact" class="section">
+  <div class="container">
+    <h2>Contacto</h2>
+
+    <form action="https://formsubmit.co/yanstrreskyrivera@gmail.com"
+          method="POST"
+          id="contactForm"
+          class="contact-form"
+          novalidate>
+
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required aria-describedby="nameError">
+      <p id="nameError" class="field-error" role="alert"></p>
+
+      <label for="email">Correo</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@ejemplo.com" required aria-describedby="emailError">
+      <p id="emailError" class="field-error" role="alert"></p>
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" placeholder="Hola, quiero contactarte..." required aria-describedby="messageError"></textarea>
+      <p id="messageError" class="field-error" role="alert"></p>
+
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Enviar</button>
+      </div>
+      <p class="form-note">El mensaje se envía a yanstrreskyrivera@gmail.com. La primera vez, FormSubmit pide confirmar ese correo.</p>
+
+    </form>
+  </div>
+</section>
+  </main>
+
+ <footer>
+        &#169; <span id="year">2026</span> yanstrresky dev — todos los derechos reservados
+        <br>
+        <div class="socials">
+            <a href="https://github.com/yansrivera" target="_blank" rel="noopener" aria-label="GitHub de Yanstrresky"><img src="./social/github.png" alt=""></a>
+            <a href="mailto:yanstrreskyrivera@gmail.com" aria-label="Enviar correo a Yanstrresky"><img src="./social/gmail.png" alt=""></a>
+            <a href="https://wa.me/573223196963" target="_blank" rel="noopener" aria-label="WhatsApp de Yanstrresky"><img src="./social/ws.png" alt=""></a>
+        </div>
+    </footer>
+  <button id="toTop" class="to-top" type="button" hidden>Subir</button>
+  <script src="script.js"></script>
+</body>
+</html>
